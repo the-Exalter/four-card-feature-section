@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--VeryLightGray);
+    font-family: "Poppins", sans-serif;
+    color: var(--VeryDarkBlue);
+    padding: 10px 50px 25px 50px;
+}
+
+.intro {
+    background-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+    width: 550px;
+    max-width: 100%;
+}
+.containers {
+    margin: 0 auto;
+    width: 1250px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 415px 415px 415px;
+    grid-template-rows: 130px 75px 32.5px 32.5px 75px 130px;
+    gap: 20px;
+}
+span, p {
+    font-weight: 200;
+}
+h1 {
+    font-size: 2.25em;
+}
+.text-description {
+    font-size: 1em;
+}
+p {
+    font-size: 0.8125em;
+}
+
+
+.supervisor, .team, .karma, .calculator {
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 20px;
+    position: relative;
+}
+.supervisor {
+    border-top: 5px solid var(--Red);
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+}
+.team {
+    border-top: 5px solid var(--Cyan);
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+.karma {
+    border-top: 5px solid var(--Orange);
+    grid-column: 2 / 3;
+    grid-row: 4 / 7;
+}
+.calculator {
+    border-top: 5px solid var(--Blue);
+    grid-column: 3 / 4;
+    grid-row: 2 / 6;
+}
+img {
+    float: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+h2 {
+    font-size: 1.25em;
+}
+@media only screen and (max-width: 1250px) {
+    .containers {
+        width: 450px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 275px 275px 275px 275px;
+    }
+    .supervisor {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .team {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .karma {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .calculator {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    }
