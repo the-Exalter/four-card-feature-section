@@ -30,6 +30,7 @@ body {
 }
 .containers {
     margin: 0 auto;
+    margin-top: 20px;
     width: 1250px;
     max-width: 100%;
     display: grid;
@@ -60,12 +61,12 @@ p {
     position: relative;
 }
 .supervisor {
-    border-top: 5px solid var(--Red);
+    border-top: 5px solid var(--Cyan);
     grid-column: 1 / 2;
     grid-row: 2 / 6;
 }
 .team {
-    border-top: 5px solid var(--Cyan);
+    border-top: 5px solid var(--Red);
     grid-column: 2 / 3;
     grid-row: 1 / 4;
 }
